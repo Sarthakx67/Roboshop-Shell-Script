@@ -27,6 +27,9 @@ VALIDATE(){
     fi
 }
 
+cd /
+
+mkdir /etc/yum.repos.d
 
 cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
 
