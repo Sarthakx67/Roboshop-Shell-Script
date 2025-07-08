@@ -2,7 +2,7 @@
 
 DATE=$(date +%F)
 LOGSDIR=/tmp
-
+# /home/centos/shellscript-logs/script-name-date.log
 SCRIPT_NAME=$0
 LOGFILE=$LOGSDIR/$0-$DATE.log
 USERID=$(id -u)
@@ -27,7 +27,6 @@ VALIDATE(){
     fi
 }
 
-cd /
 
 cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
 
